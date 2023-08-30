@@ -1,0 +1,30 @@
+create database library;
+use library;
+
+create table readers (
+    ID varchar(255) NOT NULL,
+    Name varchar(255) NOT NULL,
+    Pass varchar(255),
+    PRIMARY KEY (ID)
+); 
+
+create table Books (
+    ID varchar(255) NOT NULL,
+    Name varchar(255) NOT NULL,
+    author varchar(255),
+    PRIMARY KEY (ID)
+); 
+
+create table Manager (
+    ID varchar(255) NOT NULL,
+    Name varchar(255) NOT NULL,
+    Pass varchar(255),
+    PRIMARY KEY (ID)
+); 
+
+create table Borrow (
+    bID varchar(255),
+    BookName varchar(255),
+    BorrowerName varchar(255)
+); 
+
